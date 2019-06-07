@@ -1,0 +1,31 @@
+{
+  "name": "koa-flickr-server",
+  "version": "1.0.0",
+  "description": "backend which exposes a single service of getting Flickr Public Feed.",
+  "main": "./src/server.ts",
+  "scripts": {
+    "test": "jest --watchAll",
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/server.ts"
+  },
+  "author": "Swati Fursule",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "log4js": "^4.3.1",
+    "superagent": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  }
+}
